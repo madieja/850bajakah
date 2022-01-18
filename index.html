@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#111111">
+    <title>Bajakah</title>
+    <!-- Vendor styles -->
+    <link rel="stylesheet" href="assets/css/bsgrid.min.css">
+    <link rel="stylesheet" href="assets/css/bsform.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="assets/vendor/font-awesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/css/swiper.min.css">
+    <!-- Main Styles -->
+    <link rel="stylesheet" href="assets/css/bajakah.css">
+    <!-- Vendor Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/5.4.5/js/swiper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <style>
+    section.artikel .inner .artikel-item .artikel-title {
+        line-height: 1.4;
+    }
+
+    section.artikel .inner .artikel-item .inner * {
+        text-align: left ;
+    }
+    </style>
+</head>
+<body>
+    <div id="homeanchor" class="bg-info" style="width: 100%; height: 20px; position: absolute; visibility: hidden;"></div>
+    <header id="header-fixed" class="elv-9 header-fixed">
+        <section>
+            <div class="content-container py-2">
+                <div class="header-content d-flex justify-content-between align-items-center elv-9">
+                    <div class="left">
+                        <a href="/">
+                            <img id="header-logo" src="assets/img/logo_main.png" alt="Teh850Bajakah">
+                        </a>
+                    </div>
+                    <div class="right d-md-block d-none">
+                        <nav>
+                            <ul class="d-flex align-items-center">
+                                    <li><a href="#homeanchor">Home</a></li>
+                                    <li><a href="#produkkamianchor">Produk Kami</a></li>
+                                    <li><a href="#hargaanchor">Harga</a></li>
+                                    <li><a href="#testimonianchor">Testimoni</a></li>
+                                    <li><a href="#artikelanchor">Artikel</a></li>
+                                    <li><a class="button button-rounded" href="#kontakanchor" style="padding-left: 20px; padding-right: 20px; color: white; background: rgb(255, 104, 17);">Hubungi Kami</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="right-mobile d-block d-md-none">
+                        <div class="drawer-trigger d-block d-md-none">
+                            <div class="hamburger hamburger--spin">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <header class="elv-9">
+        <section>
+            <div class="content-container py-2">
+                <div class="header-content d-flex justify-content-between align-items-center elv-9">
+                    <div class="left">
+                        <a href="/">
+                            <img id="header-logo" src="assets/img/logo_main.png" alt="Teh850Bajakah">
+                        </a>
+                    </div>
+                    <div class="right d-md-block d-none">
+                        <nav>
+                            <ul class="d-flex align-items-center">
+                                <li><a href="#homeanchor">Home</a></li>
+                                <li><a href="#produkkamianchor">Produk Kami</a></li>
+                                <li><a href="#hargaanchor">Harga</a></li>
+                                <li><a href="#testimonianchor">Testimoni</a></li>
+                                <li><a href="#artikelanchor">Artikel</a></li>
+                                <li><a class="button button-rounded" href="#kontakanchor" style="padding-left: 20px; padding-right: 20px; color: white; background: rgb(255, 104, 17);">Hubungi Kami</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="right-mobile d-block d-md-none">
+                        <div class="drawer-trigger d-block d-md-none">
+                            <div class="hamburger hamburger--spin">
+                                <div class="hamburger-box">
+                                    <div class="hamburger-inner"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="site-drawer elv-8 d-block d-md-none">
+                    <div class="content-container">
+                        <div class="drawer-content group">
+                            <nav>
+                                <ul class="drawer-anchors">
+                                    <li><a href="#homeanchor">Home</a></li>
+                                    <li><a href="#produkkamianchor">Produk Kami</a></li>
+                                    <li><a href="#hargaanchor">Harga</a></li>
+                                    <li><a href="#testimonianchor">Testimoni</a></li>
+                                    <li><a href="#artikelanchor">Artikel</a></li>
+                                    <li><a href="#kontakanchor">Kontak</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="drawer-content social">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main id="home">
+        <section class="hero pt-5">
+            <div class="content-container td-p-100">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="item col-12 col-md-6 content-info">
+                            <h1 class="hero-heading">Hidup sehat dengan minum Teh 850 Bajakah</h1>
+                            <p class="mb-5">Teh asli dari akar Bajakah khas kalimantan yang memiliki banyak sekali khasiat kesehatan</p>
+                            <a href="#" class="button button-rounded bg-info text-white py-4" style="padding-left: 20px; padding-right: 20px; color: white; background: rgb(255, 104, 17);">
+                                <span style="line-height: 1"><i class="mr-2" style="color:white" width="16" height="16" data-feather="shopping-bag"></i></span> 
+                                <span>Beli Sekarang</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item hero-image" style="background-image: url('assets/img/1.png');">
+            </div>
+        </section>
+        <section id="produkkami" class="komposisi">
+            <div id="produkkamianchor" class="bg-info elv-8" style="width: 100%; height: 20px; position: absolute; top: -50px; visibility: hidden;"></div>
+            <div class="bg-tribal">
+                <img src="assets/img/tribal.png" alt="">
+            </div>
+            <div class="content-container td-p-100">
+                <div class="inner">
+                    <div class="section-header">
+                        <h2 class="text-white mb-4">Apa itu Bajakah ?</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque delectus numquam aliquam maiores, deserunt deleniti facilis, ut iure aliquid illo minima nobis possimus quidem accusamus a voluptates dicta optio rem incidunt tempora sunt assumenda impedit quo. Ullam iste eius molestiae.
+                        </p>
+                    </div>
+                    <div class="section-body">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-6 col-md-4 mb-5">
+                                    <div class="item">
+                                        <div class="item-image" style="background-image: url('assets/img/zat/1.jpg');background-position: center center; background-size: cover;">
+
+                                        </div>
+                                        <div class="item-title">Alkoloid</div>
+                                        <div class="item-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum doloribus explicabo ex at. Nisi.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 mb-5">
+                                    <div class="item">
+                                        <div class="item-image" style="background-image: url('assets/img/zat/2.jpeg');background-position: center center; background-size: cover;">
+                                
+                                        </div>
+                                        <div class="item-title">Tannin</div>
+                                        <div class="item-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum doloribus explicabo ex at. Nisi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 mb-5">
+                                    <div class="item">
+                                        <div class="item-image" style="background-image: url('assets/img/zat/3.jpg');background-position: center center; background-size: cover;">
+                                
+                                        </div>
+                                        <div class="item-title">Fenolik</div>
+                                        <div class="item-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum doloribus explicabo ex at. Nisi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 mb-5">
+                                    <div class="item">
+                                        <div class="item-image" style="background-image: url('assets/img/zat/4.jpg');background-position: center center; background-size: cover;">
+                                
+                                        </div>
+                                        <div class="item-title">Terpenoid</div>
+                                        <div class="item-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum doloribus explicabo ex at. Nisi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 mb-5">
+                                    <div class="item">
+                                        <div class="item-image" style="background-image: url('assets/img/zat/5.jpg');background-position: center center; background-size: cover;">
+                                
+                                        </div>
+                                        <div class="item-title">Saponin</div>
+                                        <div class="item-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum doloribus explicabo ex at. Nisi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4 mb-5">
+                                    <div class="item">
+                                        <div class="item-image" style="background-image: url('assets/img/zat/6.gif');background-position: center center; background-size: cover;">
+                                
+                                        </div>
+                                        <div class="item-title">Steroid</div>
+                                        <div class="item-body">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi laborum doloribus explicabo ex at. Nisi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="slider-1 td-p-100">
+            <div class="content-container">
+                <div id="image-slider-1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/img/image-1.jpg" alt="#">
+                            <div class="overlay overlay overlay-0"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/image-2.jpg" alt="#">
+                            <div class="overlay overlay overlay-0"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/image-3.jpg" alt="#">
+                            <div class="overlay overlay overlay-0"></div>
+                        </div>
+                    </div>
+                    <div class="navigation d-flex elv-3">
+                            <span class="slider-1-prev">
+                                <i data-feather="arrow-left-circle"></i>
+                            </span>
+                            <span class="slider-1-next ml-auto">
+                                <i data-feather="arrow-right-circle"></i>
+                            </span>
+                    </div>
+                    <div class="slider-1-pagination swiper-pagination swiper-pagination-bullets swiper-pagination-bullets-dynamic" style="width: 80px;"><span class="swiper-pagination-bullet swiper-pagination-bullet-active-prev-prev" style="left: 0px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-prev" style="left: 0px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main" style="left: 0px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next" style="left: 0px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next-next" style="left: 0px;"></span><span class="swiper-pagination-bullet" style="left: 0px;"></span><span class="swiper-pagination-bullet" style="left: 0px;"></span><span class="swiper-pagination-bullet" style="left: 0px;"></span><span class="swiper-pagination-bullet" style="left: 0px;"></span></div>
+                </div>
+            </div>
+        </section>
+        <section class="product-overall">
+            <div class="content-container td-pb-100">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="item col-12 col-md-6 content-image mb-5">
+                            <div class="image-bg" style="background-image: url('assets/img/image-4.jpg')"></div>
+                        </div>
+                        <div class="item col-12 col-md-5 content-info ml-auto">
+                            <h2>Lebih baik mencegah daripada mengobati</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti aperiam beatae asperiores exercitationem nobis? Necessitatibus.</p>
+                            <ul>
+                                <li class="d-flex align-items-center"><span><i data-feather="target" class="mr-3" style="color: rgb(255, 104, 17);"></i></span> Meningkatkan Imun Tubuh</li>
+                                <li class="d-flex align-items-center"><span><i data-feather="target" class="mr-3" style="color: rgb(255, 104, 17);"></i></span> Meningkatkan Daya Tahan Tubuh</li>
+                                <li class="d-flex align-items-center"><span><i data-feather="target" class="mr-3" style="color: rgb(255, 104, 17);"></i></span> Meningkatkan Mood</li>
+                                <li class="d-flex align-items-center"><span><i data-feather="target" class="mr-3" style="color: rgb(255, 104, 17);"></i></span> Meredakan Sesak Nafas</li>
+                                <li class="d-flex align-items-center"><span><i data-feather="target" class="mr-3" style="color: rgb(255, 104, 17);"></i></span> Dan sebagainya</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="testimoni" class="testimoni">
+            <div id="testimonianchor" class="bg-info elv-8" style="width: 100%; height: 20px; position: absolute; top: -50px; visibility: hidden;"></div>
+            <div class="content-container td-p-100">
+                <div class="section-header">
+                    <h2>Testimoni</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur unde, excepturi officiis et velit obcaecati.</p>
+                </div>
+                <div class="slider-testimoni-pagination swiper-pagination swiper-pagination-bullets mt-4"><span class="swiper-pagination-bullet swiper-pagination-bullet-active-prev-prev" style="left: 0px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-prev" style="left: 0px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main" style="left: 0px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next" style="left: 0px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next-next" style="left: 0px;"></span><span class="swiper-pagination-bullet" style="left: 0px;"></span><span class="swiper-pagination-bullet" style="left: 0px;"></span><span class="swiper-pagination-bullet" style="left: 0px;"></span><span class="swiper-pagination-bullet" style="left: 0px;"></span></div>
+                <div class="section-body">
+                    <div id="testimoni-slider">
+                        <div class="swiper-wrapper pb-4">
+                            <div class="swiper-slide card b-shadow">
+                                <div class="card-body">
+                                    Lorem ipsum d dolorem earum! Architecto veritatis quibusdam harum quae facilis.
+                                </div>
+                                <div class="card-title">
+                                    <h4>John Doe</h4>
+                                    <p>Karyawan Swasta</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card b-shadow">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, minus! Expedita fuga ab eveniet illum quasi,
+                                    porro dolorem earum! Architecto veritatis quibusdam harum quae facilis.
+                                </div>
+                                <div class="card-title">
+                                    <h4>John Doe</h4>
+                                    <p>Karyawan Swasta</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card b-shadow">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, minus! Expedita fuga ab eveniet illum quasi,
+                                    porro dolorem earum! Architecto veritatis quibusdam harum quae facilis.
+                                </div>
+                                <div class="card-title">
+                                    <h4>John Doe</h4>
+                                    <p>Karyawan Swasta</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card b-shadow">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, minus! Expedita fuga ab eveniet illum quasi,
+                                    porro dolorem earum! Architecto veritatis quibusdam harum quae facilis.
+                                </div>
+                                <div class="card-title">
+                                    <h4>John Doe</h4>
+                                    <p>Karyawan Swasta</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card b-shadow">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, minus! Expedita fuga ab eveniet illum quasi,
+                                    porro dolorem earum! Architecto veritatis quibusdam harum quae facilis.
+                                </div>
+                                <div class="card-title">
+                                    <h4>John Doe</h4>
+                                    <p>Karyawan Swasta</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide card b-shadow">
+                                <div class="card-body">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, minus! Expedita fuga ab eveniet illum quasi,
+                                    porro dolorem earum! Architecto veritatis quibusdam harum quae facilis.
+                                </div>
+                                <div class="card-title">
+                                    <h4>John Doe</h4>
+                                    <p>Karyawan Swasta</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content-trust">
+            <div class="content-container td-p-100">
+                <div class="section-header">
+                    <h2>5 Tahun dipercaya menjadi produk alami terbaik</h2>
+                </div>
+                <div class="section-body">
+                    <div id="content-trust-slider" style="overflow: hidden;">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/img/ct/1.jpg" alt="#">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/ct/2.jpg" alt="#">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/ct/ct-1.jpg" alt="#">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/ct/ct-2.jpg" alt="#">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/ct/ct-3.jpg" alt="#">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/ct/ct-4.jpg" alt="#">
+                            </div>
+                        </div>
+                        <div class="bullets"></div>
+                    </div>
+                    <div class="slider-content-trust-pagination swiper-pagination swiper-pagination-bullets mt-5"><span class="swiper-pagination-bullet swiper-pagination-bullet-active-prev-prev" style="left: 0px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-prev" style="left: 0px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active swiper-pagination-bullet-active-main" style="left: 0px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next" style="left: 0px;"></span><span class="swiper-pagination-bullet swiper-pagination-bullet-active-next-next" style="left: 0px;"></span><span class="swiper-pagination-bullet" style="left: 0px;"></span><span class="swiper-pagination-bullet" style="left: 0px;"></span><span class="swiper-pagination-bullet" style="left: 0px;"></span><span class="swiper-pagination-bullet" style="left: 0px;"></span></div>
+                </div>
+            </div>
+        </section>
+        <section class="cta">
+            <div class="content-container td-pb-100">
+                <div class="inner" style="background-image: url('assets/img/3.jpg')">
+                    <div class="overlay overlay-4"></div>
+                    <h2 class="elv-3">Tunggu apa lagi dapatkan sekarang di retail terdekat</h2>
+                    <a href="#" class="button button-rounded bg-info text-white py-4 mt-4"
+                        style="padding-left: 20px; padding-right: 20px; color: white; background: rgb(255, 104, 17);">
+                        <span style="line-height: 1"><i class="mr-2" style="color:white" width="16" height="16"
+                                data-feather="shopping-bag"></i></span>
+                        <span>Beli Sekarang</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="harga" class="price">
+            <div id="hargaanchor" class="bg-info elv-8" style="width: 100%; height: 20px; position: absolute; top: -50px; visibility: hidden;"></div>
+            <div class="content-container td-p-100">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="item col-12 col-md-6 content-image mb-5">
+                            <div class="image-bg" style="background-image: url('assets/img/2.png')"></div>
+                        </div>
+                        <div class="item col-12 col-md-5 content-info ml-auto">
+                            <h2 class="">Teh 850 Bajakah</h2>
+                            <p class="mb-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti aperiam beatae asperiores exercitationem nobis? Necessitatibus.</p>
+                            <h3 class="price mb-4">Rp.35.000 / Pcs</h3>
+                            <a href="#" class="button button-rounded bg-info text-white py-4 mt-4"
+                                style="padding-left: 20px; padding-right: 20px; color: white; background: rgb(255, 104, 17);">
+                                <span style="line-height: 1"><i class="mr-2" style="color:white" width="16" height="16"
+                                        data-feather="shopping-bag"></i></span>
+                                <span>Beli Sekarang</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="artikel" class="artikel">
+            <div id="artikelanchor" class="bg-info elv-8" style="width: 100%; height: 20px; position: absolute; top: -50px; visibility: hidden;"></div>
+            <div class="content-container td-p-100">
+                <div class="inner">
+                    <h2>Artikel</h2>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <a href="#" class="col-12 col-md-4 artikel-item d-block mb-4">
+                                <div class="inner b-shadow">
+                                    <div class="artikel-item-thumb" style="background-image: url('assets/img/image-2.jpg')"></div>
+                                    <div class="artikel-body">
+                                        <h4 class="artikel-title">Inilah Manfaat Teh yang disebut dapat juga Mencegah Covid-19</h4>
+                                        <p>Teh merupakan minuman yang pasti kalian pernah jumpai dirumah maupun di restoran. Salah satu minuman yang memang dikenal dapat menyehatkan…</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="col-12 col-md-4 artikel-item d-block mb-4">
+                                <div class="inner b-shadow">
+                                    <div class="artikel-item-thumb" style="background-image: url('assets/img/image-2.jpg')"></div>
+                                    <div class="artikel-body">
+                                        <h4 class="artikel-title">Lakukan Aktifitas ini, Jika Kamu Ingin Terhindar dari Penyakit</h4>
+                                        <p>Kita kadang tidak sadar dibalik banyak nya kegiatan kita lupa untuk menjaga tubuh agar tetap sehat, padahal kesehatan tubuh merupakan…</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="col-12 col-md-4 artikel-item d-block mb-4">
+                                <div class="inner b-shadow">
+                                    <div class="artikel-item-thumb" style="background-image: url('assets/img/image-2.jpg')"></div>
+                                    <div class="artikel-body">
+                                        <h4 class="artikel-title">Mengenal Lebih Jauh Mengenai Bajakah</h4>
+                                        <p>Mungkin beberapa dari kalian masih terdengar asing apa itu tanaman Bajakah. Tanaman yang berasal dari Kalimantan Tengah ini sempat viral…</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="container-fluid mt-3">
+                        <div class="row align-items-center justify-content-center">
+                            <div class="col d-flex justify-content-center">
+                                    <a href="#" class="button button-rounded bg-info text-white py-4 mt-4"
+                                        style="padding-left: 20px; padding-right: 20px; color: white; background: rgb(255, 104, 17);">
+                                        <span style="line-height: 1"><i class="mr-2" style="color:white" width="16" height="16"
+                                                data-feather="book"></i></span>
+                                        <span>Lihat Semua</span>
+                                    </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="kontak" class="contact">
+            <div id="kontakanchor" class="bg-info elv-8" style="width: 100%; height: 20px; position: absolute; top: -50px; visibility: hidden;"></div>
+            <div class="content-container td-p-100">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="item col-12 col-md-6 content-image mb-5">
+                            <div class="map-embed" style="">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15843.3847569543!2d107.6278955!3d-6.9089881!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1b9052d7843113cb!2sNawa%20Coffee%20Indonesia%201.0!5e0!3m2!1sen!2sid!4v1621234841518!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                        <div class="item col-12 col-md-6 content-info mt-4">
+                            <h2>Contact Us</h2>
+                            <p>Untuk pertanyaan / saran / informasi lebih lanjut mengenai Teh 850 Bajakah silahkan isi kolom pesan dibawah ini</p>
+                            <div class="feedback alert bg-danger my-3">
+                                <span class="text-white"><strong>Error!</strong> please try again later.</span>
+                                <span style="font-size: 24px; cursor: pointer;" onclick="closeParent(event)">&times;</span>
+                            </div>
+                            <form action="#" id="contact">
+                                <div class="form-group mt-0 mb-3">
+                                    <label for="name" class="text-white mb-2">Name</label>
+                                    <input type="text" name="name" placeholder="Isi Nama" class="form-control py-4" required>
+                                </div>
+                                <div class="form-group mt-0 mb-3 pt-0">
+                                    <label for="email" class="text-white mb-2">Email</label>
+                                    <input type="email" name="email" placeholder="Isi Email" class="form-control py-4" required>
+                                </div>
+                                <div class="form-group mt-0 mb-3 pt-0">
+                                    <label for="email" class="text-white mb-2">Pesan</label>
+                                    <textarea class="form-control py-3" name="message" cols="30" rows="10" placeholder="Isi Pesan" required></textarea>
+                                </div>
+
+                                <button type="submit" class="button button-rounded bg-info text-white py-4 mt-3"
+                                    style="padding-left: 20px; padding-right: 20px; color: white; background: rgb(255, 104, 17);">
+                                    <span style="line-height: 1"><i class="mr-2" style="color:white" width="16" height="16"
+                                            data-feather="send"></i></span>
+                                    <span>Kirim pesan</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <div id="ctawa" class="elv-8 b-shadow">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+    <footer style="width: 100%; position: relative;" class="py-2">
+        <div class="content-container">
+            <div class="footer-content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-5 footer-left mb-5">
+                            <img class="footer-logo mb-4" src="assets/img/logo_white.png" alt="teh850Bajakah" />
+                            <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis odio, ducimus non dolorum repudiandae quia esse sunt suscipit eveniet soluta mollitia quas, magnam ab laborum?</p>
+                        </div>
+                        <div class="col-12 col-md-7 footer-right ml-auto">
+                            <div class="container-fluid">
+                                <div class="row footer-links" style="flex-wrap: nowrap;">
+                                    <div class="col-12 col-md-4 px-0 mr-4 mb-5 mb-md-0">
+                                        <div class="title">Company</div>
+                                        <nav class="links">
+                                            <ul>
+                                                <li><span><i data-feather="map-pin" style="color: white;"></i></span><p>Jl. Cendana No.3, Cihapit, Kec. Bandung Wetan, Kota Bandung</p></li>
+                                                <li><span><i data-feather="phone" style="color: white;"></i></span><p>0812 2312 1234</p></li>
+                                                <li><span><i data-feather="mail" style="color: white;"></i></span><p>info@teh850bajakah.com</p></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="col-12 col-md-4 px-0 mr-4 mb-5 mb-md-0">
+                                        <div class="title">Products</div>
+                                        <nav class="links">
+                                            <ul>
+                                                <li><a href="#">FAQs</a></li>
+                                                <li><a href="#">Term and Condition</a></li>
+                                                <li><a href="#">Press</a></li>
+                                                <li><a href="#">Privacy</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="col-12 col-md-4 px-0  mb-5 mb-md-0">
+                                        <div class="title">Information</div>
+                                        <nav class="links">
+                                            <ul>
+                                                <li><a href="#">Teh 850 Bajakah</a></li>
+                                                <li><a href="#">Our Products</a></li>
+                                                <li><a href="#">Testimoni</a></li>
+                                                <li><a href="#">Harga</a></li>
+                                                <li><a href="#">Contact Us</a></li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright mt-5">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-md-6 mb-4 mb-md-0">
+                            <p class="copyright-text">Teh 850 Bajakah &copy; 2021 All Right reserved</p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="social d-flex align-items-center justify-content-end">
+                                <a class="mr-2" href="#"><i data-feather="instagram"></i></a>
+                                <a class="mr-2" href="#"><i data-feather="facebook"></i></a>
+                                <a class="" href="#"><i data-feather="youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="assets/js/index.js"></script>
+</body>
+</html>
